@@ -73,59 +73,12 @@
               <span class="c-logo__text c-logo__text--white">Zona Web</span>
             </div>
           </a>
-          <!-- <nav class="c-nav">
-            <input id="dropdown" class="c-nav__toggle" type="checkbox" />
-            <div class="c-nav__content">
-              <ul class="c-list c-list--flex">
-                <li class="c-list__item">
-                  <a href="#servicios" class="c-link c-link--list">Servicios</a>
-                </li>
-                <li class="c-list__item">
-                  <a href="#nosotros" class="c-link c-link--list">Nosotros</a>
-                </li>
-              </ul>
-              <button class="c-button c-button--small c-button--secondary">
-                Contacto
-              </button>
-            </div>
-          </nav> -->
         </div>
       </div>
     </header>
 
     <main>
-      <!-- <section class="section">
-        <div class="c-hero">
-          <div class="container">
-            <div class="c-hero__content">
-              <h1 class="heading heading--1 heading--light">
-                Soluciones digitales a medida para cada negocio
-              </h1>
-              <h4 class="heading heading--4 heading--blue">
-                Diseñamos sitios web modernos, sistemas de gestión y aplicaciones móviles
-                pensadas para automatizar procesos, atraer clientes y aumentar tus ventas.
-              </h4>
-              <div class="c-hero__button-group">
-                <button class="c-button c-button--primary">
-                  Solicitar presupuesto
-                </button>
-                <button class="c-button c-button--secondary">
-                  Ver nuestros servicios
-                </button>
-              </div>
-            </div>
-      
-            <div class="c-hero__img-holder">
-              <img
-                class="c-hero__img"
-                src="img/dashboard.png"
-                alt="Sistema de gestión digital"
-              />
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section class="section">
+      <section class="section" id="inicio">
         <div class="c-hero">
           <div class="container">
             <div class="c-hero__content">
@@ -139,12 +92,19 @@
                 límites.
               </h4>
               <div class="c-hero__button-group">
-                <button class="c-button c-button--primary">
-                  Iniciar proyecto
-                </button>
-                <button class="c-button c-button--secondary">
-                  Ver proyectos
-                </button>
+                <a
+                  href="#servicios"
+                  class="c-button c-button--primary link-as-button"
+                >
+                  Ver planes
+                </a>
+
+                <a
+                  href="#contacto"
+                  class="c-button c-button--secondary link-as-button"
+                >
+                  Contactar
+                </a>
               </div>
             </div>
 
@@ -159,18 +119,8 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="servicios">
         <div class="container">
-          <!-- <div class="section__title-wrapper">
-            <h2 class="heading heading--2">Nuestros servicios</h2>
-
-            <h4 class="heading heading--4">
-              Creamos herramientas digitales personalizadas que optimizan tu
-              negocio, mejoran la experiencia de tus clientes y te ayudan a
-              destacar frente a la competencia.
-            </h4>
-          </div> -->
-
           <div class="box box--flex">
             <article class="c-card">
               <div class="c-card__content">
@@ -182,9 +132,13 @@
                   Google. Ideales para inmobiliarias, hoteles y pymes que
                   quieren generar más consultas y mejorar su presencia online.
                 </p>
-                <button class="c-button c-button--primary button-md">
+                <a
+                  href="https://wa.me/5492284656640?text=Hola,%20podrián%20darme%20información%20sobre%20sus%20servicios"
+                  target="_blank"
+                  class="c-button c-button--primary button-md link-as-button"
+                >
                   Me interesa
-                </button>
+                </a>
               </div>
               <div class="c-card__img-holder">
                 <img
@@ -205,9 +159,13 @@
                   administración de clientes, control de propiedades, reservas,
                   facturación y más.
                 </p>
-                <button class="c-button c-button--primary button-md">
-                 Me interesa
-                </button>
+                <a
+                  href="https://wa.me/5492284656640?text=Hola,%20podrián%20darme%20información%20sobre%20sus%20servicios"
+                  target="_blank"
+                  class="c-button c-button--primary button-md link-as-button"
+                >
+                  Me interesa
+                </a>
               </div>
 
               <div class="c-card__img-holder">
@@ -229,9 +187,16 @@
                   clientes en cualquier momento y lugar, mejorando la
                   comunicación y la experiencia digital.
                 </p>
-                <button class="c-button c-button--primary button-md">
-                 Me interesa
-                </button>
+                <!-- <button class="c-button c-button--primary button-md">
+                  Me interesa
+                </button> -->
+                <a
+                  href="https://wa.me/5492284656640?text=Hola,%20podrián%20darme%20información%20sobre%20sus%20servicios"
+                  target="_blank"
+                  class="c-button c-button--primary button-md link-as-button"
+                >
+                  Me interesa
+                </a>
               </div>
 
               <div class="c-card__img-holder">
@@ -318,7 +283,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="planes">
         <div class="container">
           <div class="section__title-wrapper">
             <h2 class="heading heading--2">Planes pensados para tu negocio</h2>
@@ -328,18 +293,18 @@
               presencia profesional online hasta sistemas completos de gestión.
             </h4>
           </div>
-
           <div class="box box--grid box--gap2">
-            <!-- PLAN INICIAL -->
+            <!-- PLAN 1 -->
             <article class="c-price">
               <div class="c-price__header">
                 <h3 class="heading heading--3 titulo-plan">
-                  Plan Presencia Digital
+                  Presencia Digital
                 </h3>
+
                 <p class="c-paragraph c-price__text">
-                  Ideal para negocios que necesitan una web profesional y
-                  moderna.
+                  Ideal para empezar con presencia online profesional.
                 </p>
+
                 <h5 class="heading heading--4 c-price__title">Incluye</h5>
               </div>
 
@@ -356,26 +321,29 @@
                   <div class="c-list__icon c-list__icon--check"></div>
                   <div class="c-list__text">Formulario de contacto</div>
                 </li>
-                <!-- <li class="c-list__item c-price__list-item">
-                  <div class="c-list__icon c-list__icon--cross"></div>
-                  <div class="c-list__text">Sistema de gestión interno</div>
-                </li> -->
+                <li class="c-list__item c-price__list-item">
+                  <div class="c-list__icon c-list__icon--check"></div>
+                  <div class="c-list__text">
+                    <strong>Hosting + Dominio gratis 1 año</strong>
+                  </div>
+                </li>
               </ul>
 
               <button
                 class="c-button c-button--secondary c-button--block c-price__button"
               >
-                Solicitar información
+                Quiero este plan
               </button>
             </article>
 
-            <!-- PLAN PROFESIONAL -->
+            <!-- PLAN 2 DESTACADO -->
             <article class="c-price c-price--highlight">
               <div class="c-price__header">
-                <h3 class="heading heading--3 titulo-plan">Plan Profesional</h3>
+                <h3 class="heading heading--3 titulo-plan">Profesional</h3>
                 <p class="c-paragraph c-price__text">
-                  Perfecto para empresas que necesitan gestionar su contenido.
+                  Para empresas que necesitan administrar contenido y crecer.
                 </p>
+
                 <h5 class="heading heading--4 c-price__title">Incluye</h5>
               </div>
 
@@ -388,30 +356,34 @@
                   <div class="c-list__icon c-list__icon--check"></div>
                   <div class="c-list__text">Panel de administración</div>
                 </li>
-                <!-- <li class="c-list__item c-price__list-item">
-                  <div class="c-list__icon c-list__icon--check"></div>
-                  <div class="c-list__text">Gestión de propiedades o servicios</div>
-                </li> -->
                 <li class="c-list__item c-price__list-item">
                   <div class="c-list__icon c-list__icon--check"></div>
                   <div class="c-list__text">Integraciones personalizadas</div>
+                </li>
+                <li class="c-list__item c-price__list-item">
+                  <div class="c-list__icon c-list__icon--check"></div>
+                  <div class="c-list__text">
+                    <strong>Hosting + Dominio gratis 1 año</strong>
+                  </div>
                 </li>
               </ul>
 
               <button
                 class="c-button c-button--primary c-button--block c-price__button"
               >
-                Solicitar información
+                Quiero este plan
               </button>
             </article>
 
-            <!-- PLAN AVANZADO -->
+            <!-- PLAN 3 -->
             <article class="c-price">
               <div class="c-price__header">
-                <h3 class="heading heading--3 titulo-plan">Plan Empresarial</h3>
+                <h3 class="heading heading--3 titulo-plan">Empresarial</h3>
+
                 <p class="c-paragraph c-price__text">
                   Solución completa para empresas que buscan escalar.
                 </p>
+
                 <h5 class="heading heading--4 c-price__title">Incluye</h5>
               </div>
 
@@ -437,24 +409,84 @@
               <button
                 class="c-button c-button--secondary c-button--block c-price__button"
               >
-                Solicitar información
+                Quiero este plan
               </button>
             </article>
           </div>
-        </div>
-      </section>
+          <!-- <div class="hosting-info">
+            <h4 class="heading heading--4">Preguntas frecuentes</h4>
+          
+            <p>
+              <strong>¿Qué es el hosting?</strong><br>
+              Es el servicio donde se aloja tu página web para que esté disponible
+              en internet las 24 horas.
+            </p>
+          
+            <p>
+              <strong>¿Qué es el dominio?</strong><br>
+              Es el nombre de tu sitio web (por ejemplo: tusitio.com).
+            </p>
+          
+            <p>
+              <strong>¿Cuánto se paga después del primer año?</strong><br>
+              Luego del primer año, el costo depende del proveedor elegido.
+              Podés renovar con nosotros o contratar planes de hosting compartido en:
+              <a href="https://www.hostinger.com/ar/hosting-web" target="_blank">Hostinger</a>
+              o
+              <a href="https://donweb.com/es-ar/web-hosting" target="_blank">DonWeb</a>.
+            </p>
+          </div> -->
+          <div class="c-faq">
+            <h4 class="heading heading--4 c-faq__title">
+              Preguntas frecuentes
+            </h4>
 
-      <!-- <section class="section banner">
-        <div class="container">
-          <div class="c-banner">
-            <h2 class="heading heading--2 c-banner__title">
-              Request early access today
-            </h2>
-            <button class="c-button c-button--primary">Request now</button>
+            <div class="c-faq__item">
+              <button class="c-faq__question">
+                ¿Qué es el hosting?
+                <span class="c-faq__icon">+</span>
+              </button>
+              <div class="c-faq__answer">
+                Es el servicio donde se aloja tu página web para que esté
+                disponible en internet las 24 horas del día.
+              </div>
+            </div>
+
+            <div class="c-faq__item">
+              <button class="c-faq__question">
+                ¿Qué es el dominio?
+                <span class="c-faq__icon">+</span>
+              </button>
+              <div class="c-faq__answer">
+                Es el nombre de tu sitio web (por ejemplo: tusitio.com). Es lo
+                que las personas escriben en el navegador para encontrarte.
+              </div>
+            </div>
+
+            <div class="c-faq__item">
+              <button class="c-faq__question">
+                ¿Cuánto se paga después del primer año?
+                <span class="c-faq__icon">+</span>
+              </button>
+              <div class="c-faq__answer">
+                Luego del primer año, el costo depende del proveedor elegido.
+                Podés renovar con nosotros o contratar planes de hosting
+                compartido en
+                <a
+                  href="https://www.hostinger.com/ar/hosting-web"
+                  target="_blank"
+                  >Hostinger</a
+                >
+                o
+                <a href="https://donweb.com/es-ar/web-hosting" target="_blank"
+                  >DonWeb</a
+                >.
+              </div>
+            </div>
           </div>
         </div>
-      </section> -->
-      <section class="section banner">
+      </section>
+      <section class="section banner" id="contacto">
         <div class="container">
           <div class="container_banner">
             <div class="c-banner c-banner--form">
@@ -613,6 +645,35 @@
           messageEl.textContent = "";
           messageEl.style.display = "none";
         }, 4000);
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".c-faq__question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = button.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
+      const phone = "5492284656640";
+
+      document.querySelectorAll(".js-whatsapp").forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const plan = this.dataset.plan;
+
+          const message = `Hola, me interesa el plan ${plan}. ¿Podés darme más información?`;
+
+          const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+            message
+          )}`;
+
+          window.open(url, "_blank");
+        });
       });
     </script>
   </body>

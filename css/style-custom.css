@@ -2,6 +2,93 @@
   color: white;
 }
 
+.link-as-button {
+  text-decoration: none;
+}
+.c-faq {
+  margin-top: 70px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-faq__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.c-faq__item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.c-faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-faq__icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.c-faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+.c-faq__answer a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.c-faq__answer a:hover {
+  text-decoration: underline;
+}
+
+/* Estado activo */
+.c-faq__item.active .c-faq__answer {
+  max-height: 300px;
+  padding: 10px 0 20px 0;
+}
+
+.c-faq__item.active .c-faq__icon {
+  transform: rotate(45deg);
+}
+
+.hosting-info {
+  margin-top: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hosting-info a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hosting-info a:hover {
+  text-decoration: underline;
+}
+
 .button-md {
   margin-top: 10px;
   font-size: 1rem;
@@ -9,6 +96,22 @@
 
 .button-big {
   font-size: 1.1rem;
+}
+
+
+.c-price__amount {
+  margin: 16px 0;
+  font-weight: 700;
+  color: #101d2d;
+}
+
+.c-price__currency {
+  font-size: 1.4rem;
+  vertical-align: top;
+}
+
+.c-price__value {
+  font-size: 2.5rem;
 }
 
 .c-banner {

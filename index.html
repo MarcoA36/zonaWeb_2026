@@ -161,17 +161,15 @@
 
       <section class="section">
         <div class="container">
-          <div class="section__title-wrapper">
-            <h2 class="heading heading--2">
-              Tecnología que trabaja para tu empresa
-            </h2>
+          <!-- <div class="section__title-wrapper">
+            <h2 class="heading heading--2">Nuestros servicios</h2>
 
             <h4 class="heading heading--4">
               Creamos herramientas digitales personalizadas que optimizan tu
               negocio, mejoran la experiencia de tus clientes y te ayudan a
               destacar frente a la competencia.
             </h4>
-          </div>
+          </div> -->
 
           <div class="box box--flex">
             <article class="c-card">
@@ -184,6 +182,9 @@
                   Google. Ideales para inmobiliarias, hoteles y pymes que
                   quieren generar más consultas y mejorar su presencia online.
                 </p>
+                <button class="c-button c-button--primary button-md">
+                  Me interesa
+                </button>
               </div>
               <div class="c-card__img-holder">
                 <img
@@ -204,6 +205,9 @@
                   administración de clientes, control de propiedades, reservas,
                   facturación y más.
                 </p>
+                <button class="c-button c-button--primary button-md">
+                 Me interesa
+                </button>
               </div>
 
               <div class="c-card__img-holder">
@@ -225,6 +229,9 @@
                   clientes en cualquier momento y lugar, mejorando la
                   comunicación y la experiencia digital.
                 </p>
+                <button class="c-button c-button--primary button-md">
+                 Me interesa
+                </button>
               </div>
 
               <div class="c-card__img-holder">
@@ -304,7 +311,7 @@
           </div>
 
           <div class="box box--flex box--mt2">
-            <button class="c-button c-button--primary">
+            <button class="c-button c-button--secondary button-big">
               Hablemos de tu proyecto
             </button>
           </div>
@@ -449,38 +456,50 @@
       </section> -->
       <section class="section banner">
         <div class="container">
-          <div class="c-banner c-banner--form">
-            <div class="c-banner__content">
-              <h2 class="heading heading--2 c-banner__title">
-                Hablemos sobre tu proyecto
-              </h2>
-              <p class="c-banner__text">
-                Contanos qué necesitás y te respondemos a la brevedad.
-              </p>
-            </div>
-
-            <form
-              class="c-banner__form"
-              method="post"
-              action="https://formspree.io/f/xaqdjjjo"
-            >
-              <div class="c-banner__form-row">
-                <input name="name" type="text" placeholder="Tu nombre" required />
-                <input name="email" type="email" placeholder="Tu email" required />
+          <div class="container_banner">
+            <div class="c-banner c-banner--form">
+              <div class="c-banner__content">
+                <h2 class="heading heading--2 c-banner__title">
+                  Hablemos sobre tu proyecto
+                </h2>
+                <p class="c-banner__text">
+                  Contanos qué necesitás y te respondemos a la brevedad.
+                </p>
               </div>
 
-              <textarea
-              name="message"
-                placeholder="Contanos brevemente tu proyecto..."
-                rows="4"
-                required
-              ></textarea>
+              <form
+                class="c-banner__form"
+                method="post"
+                action="https://formspree.io/f/xaqdjjjo"
+              >
+                <div class="c-banner__form-row">
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Tu email"
+                    required
+                  />
+                </div>
 
-              <button type="submit" class="c-button c-button--primary">
-                Enviar mensaje
-              </button>
-              <p class="form-message" aria-live="polite"></p>
-            </form>
+                <textarea
+                  name="message"
+                  placeholder="Contanos brevemente tu proyecto..."
+                  rows="4"
+                  required
+                ></textarea>
+
+                <button type="submit" class="c-button c-button--primary">
+                  Enviar mensaje
+                </button>
+                <p class="form-message" aria-live="polite"></p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -524,12 +543,16 @@
             </div>
             <ul class="c-list c-list--flex c-list--align-right">
               <li class="c-list__item c-list__item--small">
-                <a href="#contacto" class="c-link c-link--list c-link--list-right"
+                <a
+                  href="#contacto"
+                  class="c-link c-link--list c-link--list-right"
                   >Contacto</a
                 >
               </li>
               <li class="c-list__item c-list__item--small">
-                <a href="#servicios" class="c-link c-link--list c-link--list-right"
+                <a
+                  href="#servicios"
+                  class="c-link c-link--list c-link--list-right"
                   >Servicios</a
                 >
               </li>
@@ -545,54 +568,52 @@
     </footer>
 
     <script>
-			const form = document.querySelector(".c-banner__form");
-			const messageEl = form.querySelector(".form-message");
-			let timeoutId;
+      const form = document.querySelector(".c-banner__form");
+      const messageEl = form.querySelector(".form-message");
+      let timeoutId;
 
-			form.addEventListener("submit", async (e) => {
-				e.preventDefault();
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-				clearTimeout(timeoutId);
+        clearTimeout(timeoutId);
 
-				messageEl.className = "form-message";
-				messageEl.textContent = "Enviando...";
-				messageEl.style.display = "block";
+        messageEl.className = "form-message";
+        messageEl.textContent = "Enviando...";
+        messageEl.style.display = "block";
 
-				const data = new FormData(form);
+        const data = new FormData(form);
 
-				try {
-					const res = await fetch(form.action, {
-						method: "POST",
-						body: data,
-						headers: {
-							Accept: "application/json",
-						},
-					});
+        try {
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+              Accept: "application/json",
+            },
+          });
 
-					if (res.ok) {
-						messageEl.textContent =
-							"¡Gracias! Recibimos tu mensaje y te contactaremos pronto.";
-						messageEl.classList.add("success");
-						form.reset();
-					} else {
-						messageEl.textContent =
-							"Hubo un error al enviar. Intentalo nuevamente.";
-						messageEl.classList.add("error");
-					}
-				} catch {
-					messageEl.textContent =
-						"Error de conexión. Probá más tarde.";
-					messageEl.classList.add("error");
-				}
+          if (res.ok) {
+            messageEl.textContent =
+              "¡Gracias! Recibimos tu mensaje y te contactaremos pronto.";
+            messageEl.classList.add("success");
+            form.reset();
+          } else {
+            messageEl.textContent =
+              "Hubo un error al enviar. Intentalo nuevamente.";
+            messageEl.classList.add("error");
+          }
+        } catch {
+          messageEl.textContent = "Error de conexión. Probá más tarde.";
+          messageEl.classList.add("error");
+        }
 
-				// ocultar luego de 4 segundos
-				timeoutId = setTimeout(() => {
-					messageEl.className = "form-message";
-					messageEl.textContent = "";
-					messageEl.style.display = "none";
-				}, 4000);
-			});
-		</script>
-
+        // ocultar luego de 4 segundos
+        timeoutId = setTimeout(() => {
+          messageEl.className = "form-message";
+          messageEl.textContent = "";
+          messageEl.style.display = "none";
+        }, 4000);
+      });
+    </script>
   </body>
 </html>

@@ -1,74 +1,116 @@
 .titulo-plan {
-    color: white;
+  color: white;
+}
+
+.button-md {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.button-big {
+  font-size: 1.1rem;
 }
 
 .c-banner {
-    position: relative;
-    z-index: 1;
-  }
-  
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.container_banner {
+  padding: 5px;
+}
+
+.c-banner__form {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/*   
   .c-banner__form {
-    position: relative;
-    z-index: 2;
-  }
+    max-width: 500px;
+    margin: 0 auto;
+  } */
 .c-banner--form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
-  }
-  
-  .c-banner__content {
-    flex: 1;
-    min-width: 280px;
-  }
-  
-  .c-banner__text {
-    margin-top: 10px;
-    opacity: 0.9;
-  }
-  
-  .c-banner__form {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .c-banner__form-row {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .c-banner__form input,
-  .c-banner__form textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-family: inherit;
-  }
-  
-  .c-banner__form textarea {
-    resize: none;
-  }
-  .form-message {
-    margin-top: 12px;
-    font-size: 14px;
-    display: none;
-  }
-  
-  /* .form-message.success {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.c-banner__content {
+  flex: 1;
+  /* min-width: 280px; */
+}
+
+.c-banner__text {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.c-banner__form {
+  flex: 1;
+  /* min-width: 280px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.c-banner__form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.c-banner__form input,
+.c-banner__form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.c-banner__form textarea {
+  resize: none;
+}
+.form-message {
+  margin-top: 12px;
+  font-size: 14px;
+  display: none;
+}
+
+/* .form-message.success {
     color: #16a34a;
   }
   
   .form-message.error {
     color: #dc2626;
   } */
-  .c-banner__form input:focus,
-  .c-banner__form textarea:focus {
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.4);
+.c-banner__form input:focus,
+.c-banner__form textarea:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 640px) {
+  .c-banner--form {
+    /* background-color: red; */
+    padding: 1.4rem;
   }
+
+  /* .box-flex{
+    padding: 1.2rem;
+  } */
+  .c-card__cta {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .c-button--primary.c-card__cta:hover {
+    transform: none; /* en mobile no necesitamos efecto hover */
+  }
+}

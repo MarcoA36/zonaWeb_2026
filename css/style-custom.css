@@ -1,6 +1,73 @@
 .titulo-plan {
   color: white;
 }
+.container_button {
+  position: relative;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0F223A, #1C3F66);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(15, 34, 58, 0.25);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.custom-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 34, 58, 0.35);
+  background: linear-gradient(135deg, #122a48, #24507f);
+}
+
+.custom-button:active {
+  transform: translateY(0px);
+  box-shadow: 0 6px 14px rgba(15, 34, 58, 0.2);
+}
+
+.custom-button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+.cotizador__group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cotizador__group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.cotizador__group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.cotizador__total {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f4f7fb;
+  border-radius: 12px;
+}
+
+#resultado {
+  color: #0F223A;
+  margin: 10px 0;
+}
+
+
 
 .link-as-button {
   text-decoration: none;

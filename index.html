@@ -211,6 +211,188 @@
         </div>
       </section>
 
+      <section class="section" id="cotizador">
+        <div class="container">
+          <div class="box">
+            <h2 class="heading heading--2">Calculá el costo de tu sitio web</h2>
+            <p class="c-paragraph">
+              Respondé algunas preguntas y obtené un presupuesto estimado con un
+              95% de precisión.
+            </p>
+
+            <!-- <div class="cotizador">
+          
+              <div class="cotizador__group">
+                <label>Tipo de sitio</label>
+                <select id="tipoSitio">
+                  <option value="60000">Sitio Web</option>
+                  <option value="80000">Tienda Online</option>
+                  <option value="120000">App mobile</option>
+                </select>
+              </div>
+
+         
+              <div class="cotizador__group">
+                <label>¿Necesita panel autoadministrable?</label>
+                <select id="panel">
+                  <option value="0">No</option>
+                  <option value="40000">Edición básica de textos</option>
+                  <option value="220000">Gestión de productos</option>
+                </select>
+              </div>
+
+              
+              <div class="cotizador__group">
+                <label>Estado de identidad visual</label>
+                <select id="logo">
+                  <option value="0">Tengo logo y marca</option>
+                  <option value="60000">
+                    Tengo logo pero necesita mejoras
+                  </option>
+                  <option value="120000">No tengo identidad visual</option>
+                </select>
+              </div>
+
+
+              <div class="cotizador__group">
+                <label>Contenido</label>
+                <select id="contenido">
+                  <option value="0">Tengo textos listos</option>
+                  <option value="80000">Necesito asesoramiento</option>
+                  <option value="160000">
+                    Necesito redacción completa SEO
+                  </option>
+                </select>
+              </div>
+
+              <div class="cotizador__total">
+                <h3>Total estimado:</h3>
+                <h2 id="resultado">$ 0</h2>
+                <p>
+                  Este cálculo tiene una precisión del 95% según los datos
+                  proporcionados.
+                </p>
+
+                <a
+                  id="whatsappBtn"
+                  href="#"
+                  target="_blank"
+                  class="c-button c-button--primary button-md"
+                >
+                  Quiero iniciar mi proyecto
+                </a>
+              </div>
+            </div> -->
+            <div class="cotizador">
+
+              <!-- ¿Exhibir productos? -->
+              <div class="cotizador__group">
+                <label>¿Necesita exhibir productos o servicios?</label>
+                <select id="exhibir">
+                  <option value="0">No</option>
+                  <option value="60000">Sí, hasta 10</option>
+                  <option value="120000">Sí, hasta 50</option>
+                  <option value="200000">Sí, más de 50</option>
+                </select>
+              </div>
+            
+              <!-- ¿Cobrar online? -->
+              <div class="cotizador__group">
+                <label>¿Necesita cobrar productos o servicios online?</label>
+                <select id="cobrar">
+                  <option value="0">No</option>
+                  <option value="150000">Sí, con pasarela de pago</option>
+                </select>
+              </div>
+            
+              <!-- Panel -->
+              <div class="cotizador__group">
+                <label>¿Necesita panel autoadministrable?</label>
+                <select id="panel">
+                  <option value="0">No</option>
+                  <option value="40000">Edición básica de textos</option>
+                  <option value="220000">Gestión de productos o servicios</option>
+                </select>
+              </div>
+            
+              <!-- Identidad -->
+              <div class="cotizador__group">
+                <label>Estado de identidad visual</label>
+                <select id="logo">
+                  <option value="0">Tengo logo y marca</option>
+                  <option value="60000">Tengo logo pero necesita mejoras</option>
+                  <option value="120000">No tengo identidad visual</option>
+                </select>
+              </div>
+            
+              <!-- Contenido -->
+              <div class="cotizador__group">
+                <label>Contenido</label>
+                <select id="contenido">
+                  <option value="0">Tengo textos listos</option>
+                  <option value="80000">Necesito asesoramiento</option>
+                  <option value="160000">Necesito redacción completa SEO</option>
+                </select>
+              </div>
+            
+              <!-- RESULTADO -->
+              <!-- <div class="cotizador__total">
+                <h3>Inversión estimada:</h3>
+                <h2 id="resultado">$ 0</h2>
+            
+                <div id="planesPago"></div>
+            
+                <p>
+                  Esta estimación contempla diseño estratégico, desarrollo optimizado y estructura preparada para escalar.
+                  Precisión aproximada del 95%.
+                </p>
+            
+                <a
+                  id="whatsappBtn"
+                  target="_blank"
+                  class="c-button c-button--primary button-md"
+                >
+                  Enviar propuesta formal
+                </a>
+              </div> -->
+              <div class="cotizador__total">
+                <h3>Inversión estimada</h3>
+              
+                <p><strong>Subtotal desarrollo:</strong></p>
+                <h2 id="subtotal">$ 0</h2>
+              
+                <div class="cotizador__servicios">
+                  <p>Hosting profesional anual: <span id="hosting">$ 0</span></p>
+                  <p>Dominio anual: <span id="dominio">$ 0</span></p>
+                </div>
+              
+                <hr />
+              
+                <p><strong>Total inversión inicial:</strong></p>
+                <h2 id="resultado">$ 0</h2>
+              
+                <div id="planesPago"></div>
+              
+                <p class="cotizador__nota">
+                  Hosting y dominio se renuevan anualmente.
+                  Esta estimación contempla diseño estratégico y desarrollo optimizado.
+                  Precisión aproximada del 95%.
+                </p>
+              
+                <a
+                  id="whatsappBtn"
+                  target="_blank"
+                  class="custom-button"
+                >
+                  Enviar propuesta
+                </a>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section features">
         <div class="container">
           <div class="box box--grid">
@@ -675,6 +857,157 @@
           window.open(url, "_blank");
         });
       });
+    </script>
+
+    <!-- <script>
+      const selects = document.querySelectorAll("#cotizador select");
+      const resultado = document.getElementById("resultado");
+      const whatsappBtn = document.getElementById("whatsappBtn");
+
+      function calcularTotal() {
+        let total = 0;
+
+        selects.forEach((select) => {
+          total += parseInt(select.value);
+        });
+
+        resultado.innerText = "$ " + total.toLocaleString("es-AR");
+
+        const mensaje = `Hola, quiero iniciar mi proyecto web.
+Tipo de sitio: ${document.getElementById("tipoSitio").selectedOptions[0].text}
+Panel: ${document.getElementById("panel").selectedOptions[0].text}
+Identidad visual: ${document.getElementById("logo").selectedOptions[0].text}
+Contenido: ${document.getElementById("contenido").selectedOptions[0].text}
+Presupuesto estimado: $${total.toLocaleString("es-AR")}`;
+
+        whatsappBtn.href = `https://wa.me/5492284656640?text=${encodeURIComponent(
+          mensaje
+        )}`;
+      }
+
+      selects.forEach((select) => {
+        select.addEventListener("change", calcularTotal);
+      });
+
+      calcularTotal();
+    </script> -->
+    <!-- <script>
+      const selects = document.querySelectorAll("#cotizador select");
+      const resultado = document.getElementById("resultado");
+      const planesPago = document.getElementById("planesPago");
+      const whatsappBtn = document.getElementById("whatsappBtn");
+    
+      function calcularTotal() {
+        let total = 60;
+    
+        selects.forEach(select => {
+          total += parseInt(select.value);
+        });
+    
+        const totalFormateado = total.toLocaleString("es-AR");
+        resultado.innerText = "$ " + totalFormateado;
+    
+        let cuotas = 0;
+        let valorCuota = 0;
+    
+        if (total > 0 && total < 250000) {
+          cuotas = 2;
+          valorCuota = Math.round(total / 2);
+        } else if (total >= 250000) {
+          cuotas = 3;
+          valorCuota = Math.round(total / 3);
+        }
+    
+        if (cuotas > 0) {
+          planesPago.innerHTML =
+            `Puede abonarse en ${cuotas} cuotas de $${valorCuota.toLocaleString("es-AR")}`;
+        } else {
+          planesPago.innerHTML = "";
+        }
+    
+        const mensaje = `Hola, quiero recibir una propuesta formal para mi proyecto web.
+    
+    Exhibición de productos: ${document.getElementById("exhibir").selectedOptions[0].text}
+    Cobro online: ${document.getElementById("cobrar").selectedOptions[0].text}
+    Panel: ${document.getElementById("panel").selectedOptions[0].text}
+    Identidad visual: ${document.getElementById("logo").selectedOptions[0].text}
+    Contenido: ${document.getElementById("contenido").selectedOptions[0].text}
+    
+    Inversión estimada: $${totalFormateado}
+    Financiación: ${cuotas} cuotas de $${valorCuota.toLocaleString("es-AR")}`;
+    
+        whatsappBtn.href =
+          `https://wa.me/5492284656640?text=${encodeURIComponent(mensaje)}`;
+      }
+    
+      selects.forEach(select => {
+        select.addEventListener("change", calcularTotal);
+      });
+    
+      calcularTotal();
+    </script> -->
+    <script>
+      const selects = document.querySelectorAll("#cotizador select");
+      const subtotalEl = document.getElementById("subtotal");
+      const resultado = document.getElementById("resultado");
+      const hostingEl = document.getElementById("hosting");
+      const dominioEl = document.getElementById("dominio");
+      const planesPago = document.getElementById("planesPago");
+      const whatsappBtn = document.getElementById("whatsappBtn");
+    
+      const HOSTING = 48000;
+      const DOMINIO = 22000;
+    
+      function calcularTotal() {
+        let subtotal = 60000;
+    
+        selects.forEach(select => {
+          subtotal += parseInt(select.value);
+        });
+    
+        const total = subtotal + HOSTING + DOMINIO;
+    
+        subtotalEl.innerText = "$ " + subtotal.toLocaleString("es-AR");
+        hostingEl.innerText = "$ " + HOSTING.toLocaleString("es-AR");
+        dominioEl.innerText = "$ " + DOMINIO.toLocaleString("es-AR");
+        resultado.innerText = "$ " + total.toLocaleString("es-AR");
+    
+        let cuotas = 0;
+        let valorCuota = 0;
+    
+        if (total > 0 && total < 250000) {
+          cuotas = 2;
+          valorCuota = Math.round(total / 2);
+        } else if (total >= 250000) {
+          cuotas = 3;
+          valorCuota = Math.round(total / 3);
+        }
+    
+        if (cuotas > 0) {
+          planesPago.innerHTML =
+            `Puede abonarse en ${cuotas} cuotas de $${valorCuota.toLocaleString("es-AR")}`;
+        } else {
+          planesPago.innerHTML = "";
+        }
+    
+        const mensaje = `Hola, quiero recibir una propuesta formal para mi proyecto web.
+    
+    Subtotal desarrollo: $${subtotal.toLocaleString("es-AR")}
+    Hosting anual: $${HOSTING.toLocaleString("es-AR")}
+    Dominio anual: $${DOMINIO.toLocaleString("es-AR")}
+    Total inversión inicial: $${total.toLocaleString("es-AR")}
+    
+    Financiación: ${cuotas} cuotas de $${valorCuota.toLocaleString("es-AR")}`;
+    
+        whatsappBtn.href =
+          `https://wa.me/5492284656640?text=${encodeURIComponent(mensaje)}`;
+      }
+    
+      selects.forEach(select => {
+        select.addEventListener("change", calcularTotal);
+      });
+    
+      calcularTotal();
     </script>
   </body>
 </html>
